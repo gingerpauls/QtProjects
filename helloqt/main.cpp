@@ -1,7 +1,6 @@
 #include <QCoreApplication>
 #include <iostream>
-#include <string>
-#include <QTextStream>
+
 
 void do_cpp(){
     std::string name;
@@ -25,7 +24,7 @@ void do_qt(){
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    //do_qt();
+    do_qt();
     do_cpp();
 
     return a.exec();
