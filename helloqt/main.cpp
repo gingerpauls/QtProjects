@@ -1,5 +1,6 @@
 #include <QCoreApplication>
 #include <iostream>
+#include <QMediaDevices>
 
 
 
@@ -31,9 +32,14 @@ void do_mixed(){
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
-    do_qt();
-    do_cpp();
-    do_mixed();
+//    do_qt();
+//    do_cpp();
+    //do_mixed();
+
+
+
+
+
 
     return a.exec();
 }

@@ -11,11 +11,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
+find_package(Qt6 REQUIRED COMPONENTS Multimedia)
 
 add_executable(helloqt
   main.cpp
 )
 target_link_libraries(helloqt Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(helloqt PRIVATE Qt6::Multimedia)
+
 
 install(TARGETS helloqt
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
