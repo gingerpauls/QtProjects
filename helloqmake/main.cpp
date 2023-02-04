@@ -1,8 +1,6 @@
 #include "widget.h"
 
 #include <QApplication>
-//#include <QtMultimedia/QAudioDeviceInfo>
-
 
 int main(int argc, char *argv[])
 {

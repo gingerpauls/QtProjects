@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include <QAudioDeviceInfo>
 
+
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
